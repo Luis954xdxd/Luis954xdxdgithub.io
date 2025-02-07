@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CV Luis Oswaldo Lopez Alfas - Ingeniero en Sistemas Computacionales</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+        }
+
+        .cv-container {
+            display: grid;
+            grid-template-columns: 35% 65%;
+            gap: 30px;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .left-column {
+            background-color: #f8f9fa;
+            padding: 25px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: block;
+            object-fit: cover;
+            border: 3px solid var(--secondary-color);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 20px;
+            border-left: 4px solid var(--secondary-color);
+            padding-left: 10px;
+            margin: 25px 0;
+        }
+
+        .progress-bar {
+            background-color: #ecf0f1;
+            height: 8px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background-color: var(--secondary-color);
+            border-radius: 4px;
+        }
+
+        .skill-badge {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            margin: 5px;
+            display: inline-block;
+            font-size: 14px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        .icon {
+            margin-right: 10px;
+            width: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Columna Izquierda -->
+        <div class="left-column">
+            <img src="foto-perfil.jpg" class="profile-img" alt="Foto profesional de Luis Oswaldo Lopez Alfas">
+            <h1>Luis Oswaldo Lopez Alfas </h1>
+            
+            <h2>Contacto</h2>
+            <ul>
+                <li>📧 za220113032@zapopan.tecmm.edu.mx</li>
+                <li>📱 3334834354</li>
+                <li>📍 Calle Flor de Durazno 7#A Colonia la Granja, Guadalajara Jalisco</li>
+            </ul>
+
+            <h2>Idiomas</h2>
+            <div class="language">
+                <p>Español (Nativo)</p>
+                <div class="progress-bar"><div class="progress-fill" style="width: 100%"></div></div>
+            </div>
+            <div class="language">
+                <p>Inglés (Intermedio)</p>
+                <div class="progress-bar"><div class="progress-fill" style="width: 80%"></div></div>
+            </div>
+        </div>
+
+        <!-- Columna Derecha -->
+        <div class="right-column">
+            <h2>Perfil Profesional</h2>
+            <p>Especialista en Estructura de datos .</p>
+
+            <h2>Experiencia Laboral</h2>
+            <h3>Administrador de Base de datos</h3>
+            <p>2025 - Actualidad</p>
+            <ul>
+                <li>Liderazgo en la seccion de Testing</li>
+                <li>Supervisor de diseño de Software</li>
+                <li>Desarrollador de Software</li>
+            </ul>
+
+            <h3>Desarrollador de Sitios Web </h3>
+            <p>2020 - 2025</p>
+            <ul>
+                <li>Implementacion de sitios a pequeñas empresas</li>
+                <li>Desarrollo de aplicaciones </li>
+                <li>Documentacion</li>
+            </ul>
+
+            <h2>Aptitudes Clave</h2>
+            <div class="skills">
+                <span class="skill-badge">Supervisor de area de Desarrollo</span>
+                <span class="skill-badge">Desarrolador Pagina web</span>
+                <span class="skill-badge">Tecnico en Redes </span>
+                <span class="skill-badge">Administrador de operaciones</span>
+            </div>
+
+            <h2>Formación Adicional</h2>
+            <ul>
+                <li> Certificación UDG - Universidad de Guadalajara (2020)</li>
+                <li> Egresado de Harvard- Harvard (2018)</li>
+                <li>Diplomado en Ciencias de la tecnologia -  (2019)</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
